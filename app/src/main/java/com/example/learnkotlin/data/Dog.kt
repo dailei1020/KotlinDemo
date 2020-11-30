@@ -19,4 +19,8 @@ class Dog(private val name:String):Animal() {
         super.eat()
         println("$name dog eat")
     }
+
+    override fun voice() {
+        println("$name wang wang")
+    }
 }

@@ -7,6 +7,8 @@ package com.example.learnkotlin.data
  */
 fun main(args: Array<String>) {
     colorChecker(Color.RED)
+    val hey = People()
+    hey.sayHello()
 }
 
 fun colorChecker(color: Color){

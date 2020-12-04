@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 import kotlinx.coroutines.newFixedThreadPoolContext
 import okhttp3.*
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
                     textView.text = "response = $ioException"
                 })
         }
+        //可通过这种方式直接操作，不需要findViewById
+        tv_hello.text = "你好"
     }
 
     /**
